@@ -18,7 +18,7 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a class="failureGroup" href="#">Gradle Test Run :test</a>
+<a class="successGroup" href="#">Gradle Test Run :test</a>
 </li>
 </ul>
 <div class="tab">
@@ -28,6 +28,9 @@
 <ul class="tabLinks">
 <li>
 <a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
 </li>
 </ul>
 <div class="tab">
@@ -48,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -60,7 +63,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">0.001s</div>
+<div class="counter">0.260s</div>
 <p>duration</p>
 </div>
 </td>
@@ -69,45 +72,25 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures successRate">
-<div class="percent">0%</div>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="result-details">
-<h3>Failure details</h3>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
 <span class="code">
 <div class="clipboard-copy-btn-container">
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-failure-borrowThenReturnBook_updatesStatusInDatabase()">Copy</button>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-borrowThenReturnBook_updatesStatusInDatabase()">Copy</button>
 </div>
-<pre id="root-0-test-failure-borrowThenReturnBook_updatesStatusInDatabase()">java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@784212 testClass = com.example.testit.service.BookServiceIT, locations = [], classes = [com.example.testit.TestItApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@3935e9a8, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@452c8a40, org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@75b21c3b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2424686b, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@61f2c3f0, org.springframework.boot.test.context.SpringBootTestAnnotation@e75f2bba], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
-	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:157)
-	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)
-	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
-	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
-	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:242)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
-	at java.base/java.util.Optional.orElseGet(Unknown Source)
-	at java.base/java.util.ArrayList.forEach(Unknown Source)
-	at java.base/java.util.ArrayList.forEach(Unknown Source)
+<pre id="root-0-test-stdout-borrowThenReturnBook_updatesStatusInDatabase()">2026-11-13T18:22:43.929+01:00  INFO 2204 --- [    Test worker] c.e.testit.adapter.mail.MailServiceFake  : Fake Mail to kikyo: Livre rendu - Merci d'avoir rendu 'nett'.
 </pre>
 </span>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -119,7 +102,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.9.1</a> at 13 nov. 2026, 17:41:23</p>
+<a href="https://www.gradle.org">Gradle 9.9.1</a> at 13 nov. 2026, 18:22:45</p>
 </div>
 </div>
 </body>
